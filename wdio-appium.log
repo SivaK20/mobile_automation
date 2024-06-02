@@ -1,0 +1,84 @@
+[38;5;0m[HTTP][0m [37m-->[39m [37mPOST[39m [37m/session[39m
+[38;5;0m[HTTP][0m [90m{"capabilities":{"alwaysMatch":{"platformName":"Android","appium:deviceName":"DemoDevice","appium:app":"C:/Users/Admin/Downloads/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk","appium:platformVersion":"14","appium:automationName":"UiAutomator2"},"firstMatch":[{}]},"desiredCapabilities":{"platformName":"Android","appium:deviceName":"DemoDevice","appium:app":"C:/Users/Admin/Downloads/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk","appium:platformVersion":"14","appium:automationName":"UiAutomator2"}}[39m
+[38;5;16m[AppiumDriver@6b69][0m Calling AppiumDriver.createSession() with args: [{"platformName":"Android","appium:deviceName":"DemoDevice","appium:app":"C:/Users/Admin/Downloads/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk","appium:platformVersion":"14","appium:automationName":"UiAutomator2"},null,{"alwaysMatch":{"platformName":"Android","appium:deviceName":"DemoDevice","appium:app":"C:/Users/Admin/Downloads/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk","appium:platformVersion":"14","appium:automationName":"UiAutomator2"},"firstMatch":[{}]}]
+[38;5;16m[AppiumDriver@6b69][0m Event 'newSessionRequested' logged at 1717312787516 (12:49:47 GMT+0530 (India Standard Time))
+[35m[Appium][39m Attempting to find matching driver for automationName 'UiAutomator2' and platformName 'Android'
+[35m[Appium][39m The 'uiautomator2' driver was installed and matched caps.
+[35m[Appium][39m Will require it at C:\Users\Admin\mobile-automation\node_modules\appium-uiautomator2-driver
+[35m[Appium][39m Requiring driver at C:\Users\Admin\mobile-automation\node_modules\appium-uiautomator2-driver\build\index.js
+[38;5;16m[AppiumDriver@6b69][0m Appium v2.5.3 creating new AndroidUiautomator2Driver (v3.5.2) session
+[38;5;16m[AppiumDriver@6b69][0m Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
+[38;5;16m[AppiumDriver@6b69][0m Appium's BaseDriver version is 9.7.0
+[38;5;16m[AppiumDriver@6b69][0m AndroidUiautomator2Driver's BaseDriver version is 9.6.0
+[38;5;32m[AndroidUiautomator2Driver@b38a][0m Creating session with W3C capabilities: {
+[38;5;32m[AndroidUiautomator2Driver@b38a][0m   "alwaysMatch": {
+[38;5;32m[AndroidUiautomator2Driver@b38a][0m     "platformName": "Android",
+[38;5;32m[AndroidUiautomator2Driver@b38a][0m     "appium:deviceName": "DemoDevice",
+[38;5;32m[AndroidUiautomator2Driver@b38a][0m     "appium:app": "C:/Users/Admin/Downloads/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk",
+[38;5;32m[AndroidUiautomator2Driver@b38a][0m     "appium:platformVersion": "14",
+[38;5;32m[AndroidUiautomator2Driver@b38a][0m     "appium:automationName": "UiAutomator2"
+[38;5;32m[AndroidUiautomator2Driver@b38a][0m   },
+[38;5;32m[AndroidUiautomator2Driver@b38a][0m   "firstMatch": [
+[38;5;32m[AndroidUiautomator2Driver@b38a][0m     {}
+[38;5;32m[AndroidUiautomator2Driver@b38a][0m   ]
+[38;5;32m[AndroidUiautomator2Driver@b38a][0m }
+[38;5;32m[AndroidUiautomator2Driver@b38a (d8650ded)][0m Session created with session id: d8650ded-42dc-45a5-b3b0-16ef9b5b0d72
+[38;5;48m[ADB][0m Found 2 'build-tools' folders under 'C:\Users\Admin\AppData\Local\Android\Sdk' (newest first):
+[38;5;48m[ADB][0m     C:\Users\Admin\AppData\Local\Android\Sdk\build-tools\34.0.0
+[38;5;48m[ADB][0m     C:\Users\Admin\AppData\Local\Android\Sdk\build-tools\30.0.3
+[38;5;48m[ADB][0m Using 'adb.exe' from 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+[38;5;48m[ADB][0m Running 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+[38;5;32m[AndroidUiautomator2Driver@b38a (d8650ded)][0m Retrieving device list
+[38;5;48m[ADB][0m Trying to find connected Android devices
+[38;5;48m[ADB][0m Getting connected devices
+[38;5;48m[ADB][0m Connected devices: [{"udid":"emulator-5554","state":"device"}]
+[38;5;32m[AndroidUiautomator2Driver@b38a (d8650ded)][0m Looking for a device with Android '14.0.0'
+[38;5;48m[ADB][0m Setting device id to emulator-5554
+[38;5;48m[ADB][0m Getting device platform version
+[38;5;48m[ADB][0m Running 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+[38;5;48m[ADB][0m Current device property 'ro.build.version.release': 14
+[38;5;32m[AndroidUiautomator2Driver@b38a (d8650ded)][0m Using device: emulator-5554
+[38;5;48m[ADB][0m Using 'adb.exe' from 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+[38;5;48m[ADB][0m Running 'C:\Users\Admin\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+[38;5;48m[ADB][0m Setting device id to emulator-5554
+[38;5;64m[BaseDriver][0m Using local app 'C:/Users/Admin/Downloads/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk'
+
+<--- Last few GCs --->
+
+[9004:0000020CD20C6910]     4407 ms: Scavenge 64.4 (81.8) -> 55.5 (86.3) MB, 4.5 / 0.0 ms  (average mu = 1.000, current mu = 1.000) allocation failure 
+[9004:0000020CD20C6910]     4895 ms: Scavenge 69.7 (87.3) -> 60.0 (90.5) MB, 8.3 / 0.0 ms  (average mu = 1.000, current mu = 1.000) allocation failure 
+[9004:0000020CD20C6910]     5309 ms: Scavenge 75.0 (92.6) -> 64.5 (95.6) MB, 3.2 / 0.0 ms  (average mu = 1.000, current mu = 1.000) allocation failure 
+
+
+<--- JS stacktrace --->
+
+
+<--- Last few GCs --->
+
+[9004:0000020CD20C6910]     4407 ms: Scavenge 64.4 (81.8) -> 55.5 (86.3) MB, 4.5 / 0.0 ms  (average mu = 1.000, current mu = 1.000) allocation failure 
+[9004:0000020CD20C6910]     4895 ms: Scavenge 69.7 (87.3) -> 60.0 (90.5) MB, 8.3 / 0.0 ms  (average mu = 1.000, current mu = 1.000) allocation failure 
+[9004:0000020CD20C6910]     5309 ms: Scavenge 75.0 (92.6) -> 64.5 (95.6) MB, 3.2 / 0.0 ms  (average mu = 1.000, current mu = 1.000) allocation failure 
+
+
+<--- JS stacktrace --->
+
+FATAL ERROR: MarkCompactCollector: young object promotion failed Allocation failed - JavaScript heap out of memory
+FATAL ERROR: MarkCompactCollector: young object promotion failed Allocation failed - JavaScript heap out of memory
+ 1: 00007FF6901E401F 
+ 2: 00007FF690173146 
+ 3: 00007FF690173FFD 
+ 4: 00007FF690AA5ADE 
+ 5: 00007FF690A9000D 
+ 6: 00007FF6909335FC 
+ 7: 00007FF69091E648 
+ 8: 00007FF690902ACF 
+ 9: 00007FF690918146 
+10: 00007FF69090E03D 
+11: 00007FF690916CAB 
+12: 00007FF69091ABCE 
+13: 00007FF690BFAC80 
+14: 00007FF690103AFD 
+15: 00007FF69023324D 
+16: 00007FF691044D60 
+17: 00007FFEC2B17344 
+18: 00007FFEC39E26B1 

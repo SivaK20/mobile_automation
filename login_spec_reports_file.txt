@@ -1,0 +1,356 @@
+PS C:\Users\Admin\mobile-automation> npx wdio wdio.conf.js
+
+Execution of 1 workers started at 2024-06-02T14:27:33.328Z
+
+2024-06-02T14:27:33.409Z INFO @wdio/cli:launcher: Run onPrepare hook
+2024-06-02T14:27:33.420Z INFO @wdio/appium-service: Will spawn Appium process: cmd /c node C:\Users\Admin\mobile-automation\node_modules\appium\index.js --base-path / --address localhost --port 4723 --command-timeout 60000
+2024-06-02T14:27:36.938Z ERROR @wdio/appium-service: 
+
+2024-06-02T14:27:36.941Z ERROR @wdio/cli:utils: A service failed in the 'onPrepare' hook
+Error: 
+
+    at Socket.<anonymous> (file:///C:/Users/Admin/mobile-automation/node_modules/@wdio/appium-service/build/launcher.js:174:28)
+    at Object.onceWrapper (node:events:510:26)
+    at Socket.emit (node:events:390:28)
+    at Socket.emit (node:domain:475:12)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:199:23)
+
+Continue...
+2024-06-02T14:27:36.950Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2024-06-02T14:27:36.953Z INFO @wdio/local-runner: Start worker 0-0 with arg: wdio.conf.js
+2024-06-02T14:27:37.019Z ERROR @wdio/appium-service: Appium exited before timeout (exit code: 1)
+
+
+[0-0] 2024-06-02T14:27:41.971Z INFO @wdio/local-runner: Run worker command: run
+[0-0] RUNNING in Android - file:///C:/Users/Admin/mobile-automation/features/login.feature
+[0-0] 2024-06-02T14:27:44.279Z INFO webdriver: Initiate new session using the WebDriver protocol
+[0-0] 2024-06-02T14:27:44.280Z INFO @wdio/utils: Connecting to existing driver at http://127.0.0.1:4723/
+[0-0] 2024-06-02T14:27:44.328Z INFO webdriver: [POST] http://127.0.0.1:4723/session
+[0-0] 2024-06-02T14:27:44.329Z INFO webdriver: DATA {
+[0-0]   capabilities: {
+[0-0]     alwaysMatch: {
+[0-0]       platformName: 'Android',
+[0-0]       'appium:deviceName': 'emulator-5554',
+[0-0]       'appium:app': 'C:/Users/Admin/Downloads/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk',
+[0-0]       'appium:appPackage': 'com.swaglabsmobileapp',
+[0-0]       'appium:appActivity': 'com.swaglabsmobileapp.MainActivity',
+[0-0]       'appium:platformVersion': '14',
+[0-0]       'appium:automationName': 'UiAutomator2'
+[0-0]     },
+[0-0]     firstMatch: [ {} ]
+[0-0]   },
+[0-0]   desiredCapabilities: {
+[0-0]     platformName: 'Android',
+[0-0]     'appium:deviceName': 'emulator-5554',
+[0-0]     'appium:app': 'C:/Users/Admin/Downloads/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk',
+[0-0]     'appium:appPackage': 'com.swaglabsmobileapp',
+[0-0]     'appium:appActivity': 'com.swaglabsmobileapp.MainActivity',
+[0-0]     'appium:platformVersion': '14',
+[0-0]     'appium:automationName': 'UiAutomator2'
+[0-0]   }
+[0-0] }
+[0-0] 2024-06-02T14:28:23.091Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.EditText[@content-desc="test-Username"]")
+[0-0] 2024-06-02T14:28:23.093Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fb43152d-8f3f-4d52-9844-a190d67ec2c0/element
+[0-0] 2024-06-02T14:28:23.093Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.EditText[@content-desc="test-Username"]'
+[0-0] }
+[0-0] 2024-06-02T14:28:32.291Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-09fd-ffff-ffff0000002b',
+[0-0]   ELEMENT: '00000000-0000-09fd-ffff-ffff0000002b'
+[0-0] }
+[0-0] 2024-06-02T14:28:32.325Z INFO webdriver: COMMAND elementClear("00000000-0000-09fd-ffff-ffff0000002b")
+[0-0] 2024-06-02T14:28:32.328Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fb43152d-8f3f-4d52-9844-a190d67ec2c0/element/00000000-0000-09fd-ffff-ffff0000002b/clear
+[0-0] 2024-06-02T14:28:32.494Z INFO webdriver: RESULT null
+[0-0] 2024-06-02T14:28:32.499Z INFO webdriver: COMMAND elementSendKeys("00000000-0000-09fd-ffff-ffff0000002b", "locked_out_user")
+[0-0] 2024-06-02T14:28:32.500Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fb43152d-8f3f-4d52-9844-a190d67ec2c0/element/00000000-0000-09fd-ffff-ffff0000002b/value
+[0-0] 2024-06-02T14:28:32.500Z INFO webdriver: DATA { text: 'locked_out_user' }
+[0-0] 2024-06-02T14:28:33.726Z INFO webdriver: RESULT null
+[0-0] 2024-06-02T14:28:33.733Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.EditText[@content-desc="test-Password"]")        
+[0-0] 2024-06-02T14:28:33.734Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fb43152d-8f3f-4d52-9844-a190d67ec2c0/element
+[0-0] 2024-06-02T14:28:33.734Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.EditText[@content-desc="test-Password"]'
+[0-0] }
+[0-0] 2024-06-02T14:28:34.925Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-09fd-ffff-ffff0000002e',
+[0-0]   ELEMENT: '00000000-0000-09fd-ffff-ffff0000002e'
+[0-0] }
+[0-0] 2024-06-02T14:28:34.940Z INFO webdriver: COMMAND elementClear("00000000-0000-09fd-ffff-ffff0000002e")
+[0-0] 2024-06-02T14:28:34.940Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fb43152d-8f3f-4d52-9844-a190d67ec2c0/element/00000000-0000-09fd-ffff-ffff0000002e/clear
+[0-0] 2024-06-02T14:28:35.060Z INFO webdriver: RESULT null
+[0-0] 2024-06-02T14:28:35.067Z INFO webdriver: COMMAND elementSendKeys("00000000-0000-09fd-ffff-ffff0000002e", "secret_pwd")
+[0-0] 2024-06-02T14:28:35.068Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fb43152d-8f3f-4d52-9844-a190d67ec2c0/element/00000000-0000-09fd-ffff-ffff0000002e/value
+[0-0] 2024-06-02T14:28:35.068Z INFO webdriver: DATA { text: 'secret_pwd' }
+[0-0] 2024-06-02T14:28:36.199Z INFO webdriver: RESULT null
+[0-0] 2024-06-02T14:28:36.213Z INFO webdriver: COMMAND findElement("xpath", "//android.view.ViewGroup[@content-desc="test-LOGIN"]")
+[0-0] 2024-06-02T14:28:36.214Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fb43152d-8f3f-4d52-9844-a190d67ec2c0/element
+[0-0] 2024-06-02T14:28:36.214Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.view.ViewGroup[@content-desc="test-LOGIN"]'
+[0-0] }
+[0-0] 2024-06-02T14:28:37.466Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-09fd-ffff-ffff0000002f',
+[0-0]   ELEMENT: '00000000-0000-09fd-ffff-ffff0000002f'
+[0-0] }
+[0-0] 2024-06-02T14:28:37.494Z INFO webdriver: COMMAND elementClick("00000000-0000-09fd-ffff-ffff0000002f")
+[0-0] 2024-06-02T14:28:37.495Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fb43152d-8f3f-4d52-9844-a190d67ec2c0/element/00000000-0000-09fd-ffff-ffff0000002f/click
+[0-0] 2024-06-02T14:28:37.897Z INFO webdriver: RESULT null
+[0-0] 2024-06-02T14:28:37.910Z INFO webdriver: COMMAND findElement("xpath", "//*[@content-desc="test-Error message"]")
+[0-0] 2024-06-02T14:28:37.923Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fb43152d-8f3f-4d52-9844-a190d67ec2c0/element
+[0-0] 2024-06-02T14:28:37.925Z INFO webdriver: DATA { using: 'xpath', value: '//*[@content-desc="test-Error message"]' }
+[0-0] 2024-06-02T14:28:39.920Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-09fd-ffff-ffff00000042',
+[0-0]   ELEMENT: '00000000-0000-09fd-ffff-ffff00000042'
+[0-0] }
+[0-0] 2024-06-02T14:28:39.934Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-09fd-ffff-ffff00000042")
+[0-0] 2024-06-02T14:28:39.935Z INFO webdriver: [GET] http://127.0.0.1:4723/session/fb43152d-8f3f-4d52-9844-a190d67ec2c0/element/00000000-0000-09fd-ffff-ffff00000042/displayed
+[0-0] 2024-06-02T14:28:40.084Z INFO webdriver: RESULT true
+[0-0] 2024-06-02T14:28:40.124Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.EditText[@content-desc="test-Username"]")
+[0-0] 2024-06-02T14:28:40.125Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fb43152d-8f3f-4d52-9844-a190d67ec2c0/element
+[0-0] 2024-06-02T14:28:40.125Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.EditText[@content-desc="test-Username"]'
+[0-0] }
+[0-0] 2024-06-02T14:28:41.000Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-09fd-ffff-ffff0000002b',
+[0-0]   ELEMENT: '00000000-0000-09fd-ffff-ffff0000002b'
+[0-0] }
+[0-0] 2024-06-02T14:28:41.021Z INFO webdriver: COMMAND elementClear("00000000-0000-09fd-ffff-ffff0000002b")
+[0-0] 2024-06-02T14:28:41.022Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fb43152d-8f3f-4d52-9844-a190d67ec2c0/element/00000000-0000-09fd-ffff-ffff0000002b/clear
+[0-0] 2024-06-02T14:28:41.199Z INFO webdriver: RESULT null
+[0-0] 2024-06-02T14:28:41.203Z INFO webdriver: COMMAND elementSendKeys("00000000-0000-09fd-ffff-ffff0000002b", "")
+[0-0] 2024-06-02T14:28:41.204Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fb43152d-8f3f-4d52-9844-a190d67ec2c0/element/00000000-0000-09fd-ffff-ffff0000002b/value
+[0-0] 2024-06-02T14:28:41.204Z INFO webdriver: DATA { text: '' }
+[0-0] 2024-06-02T14:28:42.614Z INFO webdriver: RESULT null
+[0-0] 2024-06-02T14:28:42.618Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.EditText[@content-desc="test-Password"]")
+[0-0] 2024-06-02T14:28:42.620Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fb43152d-8f3f-4d52-9844-a190d67ec2c0/element
+[0-0] 2024-06-02T14:28:42.620Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.EditText[@content-desc="test-Password"]'
+[0-0] }
+[0-0] 2024-06-02T14:28:45.106Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-09fd-ffff-ffff0000002e',
+[0-0]   ELEMENT: '00000000-0000-09fd-ffff-ffff0000002e'
+[0-0] }
+[0-0] 2024-06-02T14:28:45.123Z INFO webdriver: COMMAND elementClear("00000000-0000-09fd-ffff-ffff0000002e")
+[0-0] 2024-06-02T14:28:45.124Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fb43152d-8f3f-4d52-9844-a190d67ec2c0/element/00000000-0000-09fd-ffff-ffff0000002e/clear
+[0-0] 2024-06-02T14:28:45.459Z INFO webdriver: RESULT null
+[0-0] 2024-06-02T14:28:45.463Z INFO webdriver: COMMAND elementSendKeys("00000000-0000-09fd-ffff-ffff0000002e", "secret_sauce")
+[0-0] 2024-06-02T14:28:45.464Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fb43152d-8f3f-4d52-9844-a190d67ec2c0/element/00000000-0000-09fd-ffff-ffff0000002e/value
+[0-0] 2024-06-02T14:28:45.464Z INFO webdriver: DATA { text: 'secret_sauce' }
+[0-0] 2024-06-02T14:28:45.979Z INFO webdriver: RESULT null
+[0-0] 2024-06-02T14:28:45.987Z INFO webdriver: COMMAND findElement("xpath", "//android.view.ViewGroup[@content-desc="test-LOGIN"]")
+[0-0] 2024-06-02T14:28:45.988Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fb43152d-8f3f-4d52-9844-a190d67ec2c0/element
+[0-0] 2024-06-02T14:28:45.988Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.view.ViewGroup[@content-desc="test-LOGIN"]'
+[0-0] }
+[0-0] 2024-06-02T14:28:47.391Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-09fd-ffff-ffff0000002f',
+[0-0]   ELEMENT: '00000000-0000-09fd-ffff-ffff0000002f'
+[0-0] }
+[0-0] 2024-06-02T14:28:47.402Z INFO webdriver: COMMAND elementClick("00000000-0000-09fd-ffff-ffff0000002f")
+[0-0] 2024-06-02T14:28:47.402Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fb43152d-8f3f-4d52-9844-a190d67ec2c0/element/00000000-0000-09fd-ffff-ffff0000002f/click
+[0-0] 2024-06-02T14:28:47.645Z INFO webdriver: RESULT null
+[0-0] 2024-06-02T14:28:47.654Z INFO webdriver: COMMAND findElement("xpath", "//*[@content-desc="test-Error message"]")
+[0-0] 2024-06-02T14:28:47.654Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fb43152d-8f3f-4d52-9844-a190d67ec2c0/element
+[0-0] 2024-06-02T14:28:47.655Z INFO webdriver: DATA { using: 'xpath', value: '//*[@content-desc="test-Error message"]' }
+[0-0] 2024-06-02T14:28:49.237Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-09fd-ffff-ffff00000042',
+[0-0]   ELEMENT: '00000000-0000-09fd-ffff-ffff00000042'
+[0-0] }
+[0-0] 2024-06-02T14:28:49.247Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-09fd-ffff-ffff00000042")
+[0-0] 2024-06-02T14:28:49.247Z INFO webdriver: [GET] http://127.0.0.1:4723/session/fb43152d-8f3f-4d52-9844-a190d67ec2c0/element/00000000-0000-09fd-ffff-ffff00000042/displayed
+[0-0] 2024-06-02T14:28:49.458Z INFO webdriver: RESULT true
+[0-0] 2024-06-02T14:28:49.538Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.EditText[@content-desc="test-Username"]")
+[0-0] 2024-06-02T14:28:49.539Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fb43152d-8f3f-4d52-9844-a190d67ec2c0/element
+[0-0] 2024-06-02T14:28:49.539Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.EditText[@content-desc="test-Username"]'
+[0-0] }
+[0-0] 2024-06-02T14:28:50.406Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-09fd-ffff-ffff0000002b',
+[0-0]   ELEMENT: '00000000-0000-09fd-ffff-ffff0000002b'
+[0-0] }
+[0-0] 2024-06-02T14:28:50.416Z INFO webdriver: COMMAND elementClear("00000000-0000-09fd-ffff-ffff0000002b")
+[0-0] 2024-06-02T14:28:50.417Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fb43152d-8f3f-4d52-9844-a190d67ec2c0/element/00000000-0000-09fd-ffff-ffff0000002b/clear
+[0-0] 2024-06-02T14:28:50.579Z INFO webdriver: RESULT null
+[0-0] 2024-06-02T14:28:50.582Z INFO webdriver: COMMAND elementSendKeys("00000000-0000-09fd-ffff-ffff0000002b", "standard_user")
+[0-0] 2024-06-02T14:28:50.582Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fb43152d-8f3f-4d52-9844-a190d67ec2c0/element/00000000-0000-09fd-ffff-ffff0000002b/value
+[0-0] 2024-06-02T14:28:50.582Z INFO webdriver: DATA { text: 'standard_user' }
+[0-0] 2024-06-02T14:28:51.697Z INFO webdriver: RESULT null
+[0-0] 2024-06-02T14:28:51.700Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.EditText[@content-desc="test-Password"]")
+[0-0] 2024-06-02T14:28:51.701Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fb43152d-8f3f-4d52-9844-a190d67ec2c0/element
+[0-0] 2024-06-02T14:28:51.701Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.EditText[@content-desc="test-Password"]'
+[0-0] }
+[0-0] 2024-06-02T14:28:52.660Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-09fd-ffff-ffff0000002e',
+[0-0]   ELEMENT: '00000000-0000-09fd-ffff-ffff0000002e'
+[0-0] }
+[0-0] 2024-06-02T14:28:52.673Z INFO webdriver: COMMAND elementClear("00000000-0000-09fd-ffff-ffff0000002e")
+[0-0] 2024-06-02T14:28:52.673Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fb43152d-8f3f-4d52-9844-a190d67ec2c0/element/00000000-0000-09fd-ffff-ffff0000002e/clear
+[0-0] 2024-06-02T14:28:52.821Z INFO webdriver: RESULT null
+[0-0] 2024-06-02T14:28:52.824Z INFO webdriver: COMMAND elementSendKeys("00000000-0000-09fd-ffff-ffff0000002e", "")
+[0-0] 2024-06-02T14:28:52.824Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fb43152d-8f3f-4d52-9844-a190d67ec2c0/element/00000000-0000-09fd-ffff-ffff0000002e/value
+[0-0] 2024-06-02T14:28:52.824Z INFO webdriver: DATA { text: '' }
+[0-0] 2024-06-02T14:28:53.950Z INFO webdriver: RESULT null
+[0-0] 2024-06-02T14:28:53.957Z INFO webdriver: COMMAND findElement("xpath", "//android.view.ViewGroup[@content-desc="test-LOGIN"]")
+[0-0] 2024-06-02T14:28:53.957Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fb43152d-8f3f-4d52-9844-a190d67ec2c0/element
+[0-0] 2024-06-02T14:28:53.957Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.view.ViewGroup[@content-desc="test-LOGIN"]'
+[0-0] }
+[0-0] 2024-06-02T14:28:55.598Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-09fd-ffff-ffff0000002f',
+[0-0]   ELEMENT: '00000000-0000-09fd-ffff-ffff0000002f'
+[0-0] }
+[0-0] 2024-06-02T14:28:55.609Z INFO webdriver: COMMAND elementClick("00000000-0000-09fd-ffff-ffff0000002f")
+[0-0] 2024-06-02T14:28:55.610Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fb43152d-8f3f-4d52-9844-a190d67ec2c0/element/00000000-0000-09fd-ffff-ffff0000002f/click
+[0-0] 2024-06-02T14:28:55.930Z INFO webdriver: RESULT null
+[0-0] 2024-06-02T14:28:55.939Z INFO webdriver: COMMAND findElement("xpath", "//*[@content-desc="test-Error message"]")
+[0-0] 2024-06-02T14:28:55.939Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fb43152d-8f3f-4d52-9844-a190d67ec2c0/element
+[0-0] 2024-06-02T14:28:55.940Z INFO webdriver: DATA { using: 'xpath', value: '//*[@content-desc="test-Error message"]' }
+[0-0] 2024-06-02T14:28:57.234Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-09fd-ffff-ffff00000042',
+[0-0]   ELEMENT: '00000000-0000-09fd-ffff-ffff00000042'
+[0-0] }
+[0-0] 2024-06-02T14:28:57.246Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-09fd-ffff-ffff00000042")
+[0-0] 2024-06-02T14:28:57.246Z INFO webdriver: [GET] http://127.0.0.1:4723/session/fb43152d-8f3f-4d52-9844-a190d67ec2c0/element/00000000-0000-09fd-ffff-ffff00000042/displayed
+[0-0] 2024-06-02T14:28:57.380Z INFO webdriver: RESULT true
+[0-0] 2024-06-02T14:28:57.406Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.EditText[@content-desc="test-Username"]")
+[0-0] 2024-06-02T14:28:57.408Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fb43152d-8f3f-4d52-9844-a190d67ec2c0/element
+[0-0] 2024-06-02T14:28:57.408Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.EditText[@content-desc="test-Username"]'
+[0-0] }
+[0-0] 2024-06-02T14:28:58.042Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-09fd-ffff-ffff0000002b',
+[0-0]   ELEMENT: '00000000-0000-09fd-ffff-ffff0000002b'
+[0-0] }
+[0-0] 2024-06-02T14:28:58.051Z INFO webdriver: COMMAND elementClear("00000000-0000-09fd-ffff-ffff0000002b")
+[0-0] 2024-06-02T14:28:58.052Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fb43152d-8f3f-4d52-9844-a190d67ec2c0/element/00000000-0000-09fd-ffff-ffff0000002b/clear
+[0-0] 2024-06-02T14:28:58.173Z INFO webdriver: RESULT null
+[0-0] 2024-06-02T14:28:58.176Z INFO webdriver: COMMAND elementSendKeys("00000000-0000-09fd-ffff-ffff0000002b", "standard_user")
+[0-0] 2024-06-02T14:28:58.176Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fb43152d-8f3f-4d52-9844-a190d67ec2c0/element/00000000-0000-09fd-ffff-ffff0000002b/value
+[0-0] 2024-06-02T14:28:58.176Z INFO webdriver: DATA { text: 'standard_user' }
+[0-0] 2024-06-02T14:28:59.003Z INFO webdriver: RESULT null
+[0-0] 2024-06-02T14:28:59.010Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.EditText[@content-desc="test-Password"]")
+[0-0] 2024-06-02T14:28:59.010Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fb43152d-8f3f-4d52-9844-a190d67ec2c0/element
+[0-0] 2024-06-02T14:28:59.010Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.EditText[@content-desc="test-Password"]'
+[0-0] }
+[0-0] 2024-06-02T14:29:00.102Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-09fd-ffff-ffff0000002e',
+[0-0]   ELEMENT: '00000000-0000-09fd-ffff-ffff0000002e'
+[0-0] }
+[0-0] 2024-06-02T14:29:00.112Z INFO webdriver: COMMAND elementClear("00000000-0000-09fd-ffff-ffff0000002e")
+[0-0] 2024-06-02T14:29:00.113Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fb43152d-8f3f-4d52-9844-a190d67ec2c0/element/00000000-0000-09fd-ffff-ffff0000002e/clear
+[0-0] 2024-06-02T14:29:00.277Z INFO webdriver: RESULT null
+[0-0] 2024-06-02T14:29:00.280Z INFO webdriver: COMMAND elementSendKeys("00000000-0000-09fd-ffff-ffff0000002e", "secret_sauce")
+[0-0] 2024-06-02T14:29:00.280Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fb43152d-8f3f-4d52-9844-a190d67ec2c0/element/00000000-0000-09fd-ffff-ffff0000002e/value
+[0-0] 2024-06-02T14:29:00.280Z INFO webdriver: DATA { text: 'secret_sauce' }
+[0-0] 2024-06-02T14:29:01.221Z INFO webdriver: RESULT null
+[0-0] 2024-06-02T14:29:01.228Z INFO webdriver: COMMAND findElement("xpath", "//android.view.ViewGroup[@content-desc="test-LOGIN"]")
+[0-0] 2024-06-02T14:29:01.229Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fb43152d-8f3f-4d52-9844-a190d67ec2c0/element
+[0-0] 2024-06-02T14:29:01.229Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.view.ViewGroup[@content-desc="test-LOGIN"]'
+[0-0] }
+[0-0] 2024-06-02T14:29:02.221Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-09fd-ffff-ffff0000002f',
+[0-0]   ELEMENT: '00000000-0000-09fd-ffff-ffff0000002f'
+[0-0] }
+[0-0] 2024-06-02T14:29:02.233Z INFO webdriver: COMMAND elementClick("00000000-0000-09fd-ffff-ffff0000002f")
+[0-0] 2024-06-02T14:29:02.234Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fb43152d-8f3f-4d52-9844-a190d67ec2c0/element/00000000-0000-09fd-ffff-ffff0000002f/click
+[0-0] 2024-06-02T14:29:02.566Z INFO webdriver: RESULT null
+[0-0] 2024-06-02T14:29:02.572Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[@text="PRODUCTS"]")
+[0-0] 2024-06-02T14:29:02.573Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fb43152d-8f3f-4d52-9844-a190d67ec2c0/element
+[0-0] 2024-06-02T14:29:02.573Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[@text="PRODUCTS"]'
+[0-0] }
+[0-0] 2024-06-02T14:29:03.672Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Admin\\.appium\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Admin\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (C:\\Users\\Admin\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)'
+[0-0] }
+[0-0] 2024-06-02T14:29:03.689Z INFO webdriver: COMMAND findElements("xpath", "//android.widget.TextView[@text="PRODUCTS"]")
+[0-0] 2024-06-02T14:29:03.690Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fb43152d-8f3f-4d52-9844-a190d67ec2c0/elements
+[0-0] 2024-06-02T14:29:03.690Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[@text="PRODUCTS"]'
+[0-0] }
+[0-0] 2024-06-02T14:29:06.269Z INFO webdriver: RESULT [
+[0-0]   {
+[0-0]     'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-09fd-ffff-ffff0000004a',
+[0-0]     ELEMENT: '00000000-0000-09fd-ffff-ffff0000004a'
+[0-0]   }
+[0-0] ]
+[0-0] 2024-06-02T14:29:06.289Z INFO webdriver: COMMAND findElement("xpath", "//android.widget.TextView[@text="PRODUCTS"]")
+[0-0] 2024-06-02T14:29:06.290Z INFO webdriver: [POST] http://127.0.0.1:4723/session/fb43152d-8f3f-4d52-9844-a190d67ec2c0/element
+[0-0] 2024-06-02T14:29:06.291Z INFO webdriver: DATA {
+[0-0]   using: 'xpath',
+[0-0]   value: '//android.widget.TextView[@text="PRODUCTS"]'
+[0-0] }
+[0-0] 2024-06-02T14:29:06.945Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-09fd-ffff-ffff0000004a',
+[0-0]   ELEMENT: '00000000-0000-09fd-ffff-ffff0000004a'
+[0-0] }
+[0-0] 2024-06-02T14:29:06.960Z INFO webdriver: COMMAND getElementText("00000000-0000-09fd-ffff-ffff0000004a")
+[0-0] 2024-06-02T14:29:06.961Z INFO webdriver: [GET] http://127.0.0.1:4723/session/fb43152d-8f3f-4d52-9844-a190d67ec2c0/element/00000000-0000-09fd-ffff-ffff0000004a/text
+[0-0] 2024-06-02T14:29:07.043Z INFO webdriver: RESULT PRODUCTS
+[0-0] 2024-06-02T14:29:07.053Z INFO webdriver: COMMAND deleteSession()
+[0-0] 2024-06-02T14:29:07.054Z INFO webdriver: [DELETE] http://127.0.0.1:4723/session/fb43152d-8f3f-4d52-9844-a190d67ec2c0
+[0-0] 2024-06-02T14:29:09.632Z INFO webdriver: RESULT null
+[0-0] PASSED in Android - file:///C:/Users/Admin/mobile-automation/features/login.feature
+2024-06-02T14:29:10.042Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+2024-06-02T14:29:10.082Z INFO @wdio/cli:launcher: Run onComplete hook
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[C:/Users/Admin/Downloads/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk Android #0-0] Running: C:/Users/Admin/Downloads/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk on Android
+[C:/Users/Admin/Downloads/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk Android #0-0] Session ID: fb43152d-8f3f-4d52-9844-a190d67ec2c0
+[C:/Users/Admin/Downloads/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk Android #0-0]
+[C:/Users/Admin/Downloads/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk Android #0-0] » \features\login.feature
+[C:/Users/Admin/Downloads/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk Android #0-0] Login Functionality
+[C:/Users/Admin/Downloads/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk Android #0-0] Valid and Invalid login attempts
+[C:/Users/Admin/Downloads/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk Android #0-0]    ✓ Given the app is launched
+[C:/Users/Admin/Downloads/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk Android #0-0]    ✓ When I enter username "locked_out_user" and password "secret_pwd"
+[C:/Users/Admin/Downloads/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk Android #0-0]    ✓ And I click on the login button
+[C:/Users/Admin/Downloads/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk Android #0-0]    ✓ Then I should see "Username and password do not match any user in this service."
+[C:/Users/Admin/Downloads/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk Android #0-0]
+[C:/Users/Admin/Downloads/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk Android #0-0] Valid and Invalid login attempts
+[C:/Users/Admin/Downloads/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk Android #0-0]    ✓ Given the app is launched
+[C:/Users/Admin/Downloads/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk Android #0-0]    ✓ When I enter username "" and password "secret_sauce"[C:/Users/Admin/Downloads/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk Android #0-0]    ✓ And I click on the login button
+[C:/Users/Admin/Downloads/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk Android #0-0]    ✓ Then I should see "Username is required"
+[C:/Users/Admin/Downloads/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk Android #0-0]
+[C:/Users/Admin/Downloads/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk Android #0-0] Valid and Invalid login attempts
+[C:/Users/Admin/Downloads/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk Android #0-0]    ✓ Given the app is launched
+[C:/Users/Admin/Downloads/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk Android #0-0]    ✓ When I enter username "standard_user" and password ""
+[C:/Users/Admin/Downloads/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk Android #0-0]    ✓ And I click on the login button
+[C:/Users/Admin/Downloads/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk Android #0-0]    ✓ Then I should see "Password is required"
+[C:/Users/Admin/Downloads/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk Android #0-0]
+[C:/Users/Admin/Downloads/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk Android #0-0] Valid and Invalid login attempts
+[C:/Users/Admin/Downloads/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk Android #0-0]    ✓ Given the app is launched
+[C:/Users/Admin/Downloads/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk Android #0-0]    ✓ When I enter username "standard_user" and password "secret_sauce"
+[C:/Users/Admin/Downloads/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk Android #0-0]    ✓ Then I should see "PRODUCTS"
+[C:/Users/Admin/Downloads/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk Android #0-0]
+[C:/Users/Admin/Downloads/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk Android #0-0] 16 passing (47.8s)
+
+
+Spec Files:      1 passed, 1 total (100% completed) in 00:01:36
+
+2024-06-02T14:29:10.250Z INFO @wdio/local-runner: Shutting down spawned worker
+2024-06-02T14:29:10.519Z INFO @wdio/local-runner: Waiting for 0 to shut down gracefully
+2024-06-02T14:29:10.522Z INFO @wdio/local-runner: shutting down
